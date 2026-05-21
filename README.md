@@ -5,9 +5,13 @@ The system automatically visits a website, extracts 30 security features, and cl
 What This Project Does?
 
 Accepts any website URL as input
+
 Automatically extracts 30 security features from the site
+
 Classifies it as Phishing or Legitimate using Machine Learning
+
 Shows a confidence score and risk level (Safe / Suspicious / Dangerous)
+
 Provides a 4-category security breakdown explaining what was checked
 
 
@@ -43,55 +47,96 @@ Class balance 55.7% Legitimate / 44.3% Phishing
 
 Machine Learning Models
 Two models were trained and compared. The best one is selected automatically.
-Metric Logistic Regression Random Forest 
+Metric Logistic Regression and Random Forest 
 
 Accuracy 93.89%  97.42%
+
 Precision 93.69% 98.02%
+
 Recall 92.44% 96.12%
+
 F1-Score 93.06% 97.06%
+
 ROC-AUC 0.9824  0.9945
+
 Cross-Val Score 92.37% +/- 0.82%97.05% +/- 0.38%
+
 Random Forest was selected as the final model based on highest ROC-AUC score.
 
 Risk Level Classification
+
 Phishing Probability Risk Level  
+
 0% to 40%  Safe  
+
 40% to 70%  Suspicious 
+
 70% to 100% Dangerous
+
 
 Security Feature Categories
 The 30 features are grouped into 4 categories:
-URL Structure — Checks the web address itself
+1. URL Structure — Checks the web address itself
+
 IP in URL, 
 URL length, 
+
 shortening service,
+
 @ symbol, 
-double-slash redirect, 
+
+double-slash redirect,
+
 hyphen in domain, 
-sub-domains, 
+
+sub-domains,
+
 https word in domain
-Security and Domain — Checks domain trustworthiness
+
+2. Security and Domain — Checks domain trustworthiness
+   
 HTTPS certificate, 
+
 domain age, 
+
 registration length, 
+
 favicon source, 
+
 non-standard port, 
-URL mismatch, DNS record
-Page Content and Behaviour — Checks what the page does
+
+URL mismatch,
+
+DNS record
+
+3. Page Content and Behaviour — Checks what the page does
 External resources percentage,
+
 anchor links, script tags, form submission target,
+
 mailto in form, 
+
 number of redirects, 
+
 status bar change,
+
 right-click disabled, 
+
 pop-up windows, 
+
 hidden iframes
-Reputation and Trust — Checks if the site is known
-Web traffic rank, 
+
+4. Reputation and Trust — Checks if the site is known
+Web traffic rank,
+
 PageRank score, 
+
 Google indexing, 
-backlinks, 
+
+backlinks,
+
 phishing databases
+
 
 Setup Instructions
 Requirements
