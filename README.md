@@ -114,6 +114,7 @@ URL mismatch,
 DNS record
 
 **3. Page Content and Behaviour — Checks what the page does**
+
 External resources percentage,
 
 anchor links, 
