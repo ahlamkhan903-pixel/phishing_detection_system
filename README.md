@@ -1,4 +1,5 @@
 **Phishing Website Detection System**
+
 A Machine Learning web application that detects whether a website is phishing or legitimate.
 The system automatically visits a website, extracts 30 security features, and classifies it using a trained Random Forest model.
 
@@ -16,6 +17,7 @@ Provides a 4-category security breakdown explaining what was checked
 
 
 **Project Structure**
+
 phishing-detection-system/
 │
 ├── app.py              
@@ -46,22 +48,21 @@ Missing values None
 Class balance 55.7% Legitimate / 44.3% Phishing
 
 **Machine Learning Models**
+
 Two models were trained and compared. The best one is selected automatically.
 Metric Logistic Regression and Random Forest 
 
-Accuracy 93.89%  97.42%
+**Accuracy**: 93.89% vs 97.42%
 
-Precision 93.69% 98.02%
+**Precision**: 93.69% vs 98.02%
 
-Recall 92.44% 96.12%
+**Recall**: 92.44% vs 96.12%
 
-F1-Score 93.06% 97.06%
+**F1-Score**: 93.06% vs 97.06%
 
-ROC-AUC 0.9824  0.9945
+**ROC-AUC**: 0.9824 vs 0.9945
 
-Cross-Val Score 92.37% +/- 0.82% 97.05% +/- 0.38%
-
-Random Forest was selected as the final model based on highest ROC-AUC score.
+**Random Forest** was selected as the final model based on highest ROC-AUC score.
 
 **Risk Level Classification**
 
@@ -75,8 +76,9 @@ Phishing Probability Risk Level
 
 
 **Security Feature Categories**
+
 The 30 features are grouped into 4 categories:
-1. URL Structure — Checks the web address itself
+**1. URL Structure — Checks the web address itself**
 
 IP in URL, 
 URL length, 
@@ -93,7 +95,7 @@ sub-domains,
 
 https word in domain
 
-2. Security and Domain — Checks domain trustworthiness
+**2. Security and Domain — Checks domain trustworthiness**
    
 HTTPS certificate, 
 
@@ -109,7 +111,7 @@ URL mismatch,
 
 DNS record
 
-3. Page Content and Behaviour — Checks what the page does
+**3. Page Content and Behaviour — Checks what the page does**
 External resources percentage,
 
 anchor links, script tags, form submission target,
@@ -126,7 +128,7 @@ pop-up windows,
 
 hidden iframes
 
-4. Reputation and Trust — Checks if the site is known
+**4. Reputation and Trust — Checks if the site is known**
 Web traffic rank,
 
 PageRank score, 
