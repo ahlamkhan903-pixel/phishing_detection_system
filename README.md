@@ -1,8 +1,8 @@
-Phishing Website Detection System
+**Phishing Website Detection System**
 A Machine Learning web application that detects whether a website is phishing or legitimate.
 The system automatically visits a website, extracts 30 security features, and classifies it using a trained Random Forest model.
 
-What This Project Does?
+**What This Project Does?**
 
 Accepts any website URL as input
 
@@ -15,7 +15,7 @@ Shows a confidence score and risk level (Safe / Suspicious / Dangerous)
 Provides a 4-category security breakdown explaining what was checked
 
 
-Project Structure
+**Project Structure**
 phishing-detection-system/
 │
 ├── app.py              
@@ -180,8 +180,13 @@ View the results — verdict, confidence score, risk level, and security breakdo
 
 
 Academic Info
+
 Project: BSCS 7th Semester
+
 Topic: Phishing Website Detection using Machine Learning
+
 Models Used: Logistic Regression, Random Forest
+
 Framework: Streamlit
+
 Dataset: Kaggle — Phishing Website Dataset (11,054 websites)
