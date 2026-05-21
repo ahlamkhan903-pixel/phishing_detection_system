@@ -35,17 +35,17 @@ phishing-detection-system/
 
 **Dataset**
 
-Kaggle — Phishing Website Dataset
+  Kaggle — Phishing Website Dataset
 
-Dataset Total websites 11,054
+  Dataset Total websites 11,054
 
-Features 30 (encoded as -1, 0, or 1)
+  Features 30 (encoded as -1, 0, or 1)
 
-Target column class (-1 = Phishing, 1 = Legitimate)
+  Target column class (-1 = Phishing, 1 = Legitimate)
 
-Missing values None
+  Missing values None
 
-Class balance 55.7% Legitimate / 44.3% Phishing
+  Class balance 55.7% Legitimate / 44.3% Phishing
 
 **Machine Learning Models**
 
@@ -78,9 +78,11 @@ Phishing Probability Risk Level
 **Security Feature Categories**
 
 The 30 features are grouped into 4 categories:
+
 **1. URL Structure — Checks the web address itself**
 
 IP in URL, 
+
 URL length, 
 
 shortening service,
@@ -114,7 +116,11 @@ DNS record
 **3. Page Content and Behaviour — Checks what the page does**
 External resources percentage,
 
-anchor links, script tags, form submission target,
+anchor links, 
+
+script tags,
+
+form submission target,
 
 mailto in form, 
 
@@ -129,6 +135,7 @@ pop-up windows,
 hidden iframes
 
 **4. Reputation and Trust — Checks if the site is known**
+
 Web traffic rank,
 
 PageRank score, 
@@ -183,12 +190,10 @@ View the results — verdict, confidence score, risk level, and security breakdo
 
 **Academic Info**
 
-Project: BSCS 7th Semester
+**Topic:** Phishing Website Detection using Machine Learning
 
-Topic: Phishing Website Detection using Machine Learning
+**Models Used:** Logistic Regression, Random Forest
 
-Models Used: Logistic Regression, Random Forest
+**Framework:** Streamlit
 
-Framework: Streamlit
-
-Dataset: Kaggle — Phishing Website Dataset (11,054 websites)
+**Dataset:** Kaggle — Phishing Website Dataset (11,054 websites)
