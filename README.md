@@ -31,11 +31,11 @@ phishing-detection-system/
     ├── model_comparison.png    
     └── confusion_matrices.png  
 
-Dataset
+**Dataset**
 
 Kaggle — Phishing Website Dataset
 
-DatasetTotal websites 11,054
+Dataset Total websites 11,054
 
 Features 30 (encoded as -1, 0, or 1)
 
@@ -45,7 +45,7 @@ Missing values None
 
 Class balance 55.7% Legitimate / 44.3% Phishing
 
-Machine Learning Models
+**Machine Learning Models**
 Two models were trained and compared. The best one is selected automatically.
 Metric Logistic Regression and Random Forest 
 
@@ -63,18 +63,18 @@ Cross-Val Score 92.37% +/- 0.82% 97.05% +/- 0.38%
 
 Random Forest was selected as the final model based on highest ROC-AUC score.
 
-Risk Level Classification
+**Risk Level Classification**
 
 Phishing Probability Risk Level  
 
-0% to 40%  Safe  
+0% to 40%  **Safe** 
 
-40% to 70%  Suspicious 
+40% to 70%  **Suspicious**
 
-70% to 100% Dangerous
+70% to 100% **Dangerous**
 
 
-Security Feature Categories
+**Security Feature Categories**
 The 30 features are grouped into 4 categories:
 1. URL Structure — Checks the web address itself
 
@@ -138,8 +138,8 @@ backlinks,
 phishing databases
 
 
-Setup Instructions
-Requirements
+**Setup Instructions**
+**Requirements**
 
 Python 3.9 or higher
 Internet connection (needed for scanning live URLs)
@@ -168,7 +168,7 @@ Step 4 — Launch the web application
 streamlit run app.py
 Open your browser at: http://localhost:8501
 
-How to Use
+**How to Use**
 
 Paste any website URL into the input box
 
@@ -179,7 +179,7 @@ Wait 5 to 15 seconds while the site is visited and analyzed
 View the results — verdict, confidence score, risk level, and security breakdown
 
 
-Academic Info
+**Academic Info**
 
 Project: BSCS 7th Semester
 
