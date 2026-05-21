@@ -33,7 +33,7 @@ phishing-detection-system/
 
 Dataset
 
-PropertyValueSourceKaggle — UCI Phishing Website 
+Kaggle — Phishing Website Dataset
 
 DatasetTotal websites 11,054
 
@@ -59,7 +59,7 @@ F1-Score 93.06% 97.06%
 
 ROC-AUC 0.9824  0.9945
 
-Cross-Val Score 92.37% +/- 0.82%97.05% +/- 0.38%
+Cross-Val Score 92.37% +/- 0.82% 97.05% +/- 0.38%
 
 Random Forest was selected as the final model based on highest ROC-AUC score.
 
@@ -154,8 +154,11 @@ pip install -r requirements.txt
 
 Step 3 — Train the models
 Run the training script:
+
 python train_model.py
+
 This will train both models, compare them, and save the best one.
+
 Expected output at the end:
 Training Complete!
 Best Model  : Random Forest
@@ -168,18 +171,17 @@ Open your browser at: http://localhost:8501
 How to Use
 
 Paste any website URL into the input box
+
 Click Scan URL
+
 Wait 5 to 15 seconds while the site is visited and analyzed
+
 View the results — verdict, confidence score, risk level, and security breakdown
 
-
-
-File Descriptions
-FilePurposeapp.pyStreamlit web interface — what users interact withtrain_model.pyTrains both models, evaluates, and saves the best oneconfig.pyCentral settings — paths, thresholds, feature definitionsmodel_utils.pyFunctions for saving, loading, predicting, and risk scoringurl_features.pyVisits a real URL and measures all 30 security features
 
 Academic Info
 Project: BSCS 7th Semester
 Topic: Phishing Website Detection using Machine Learning
 Models Used: Logistic Regression, Random Forest
 Framework: Streamlit
-Dataset: Kaggle — UCI Phishing Website Dataset (11,054 websites)
+Dataset: Kaggle — Phishing Website Dataset (11,054 websites)
