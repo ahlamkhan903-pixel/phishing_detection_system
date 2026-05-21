@@ -5,9 +5,13 @@ The system automatically visits a website, extracts 30 security features, and cl
 What This Project Does?
 
 Accepts any website URL as input
+
 Automatically extracts 30 security features from the site
+
 Classifies it as Phishing or Legitimate using Machine Learning
+
 Shows a confidence score and risk level (Safe / Suspicious / Dangerous)
+
 Provides a 4-category security breakdown explaining what was checked
 
 
@@ -28,10 +32,17 @@ phishing-detection-system/
     └── confusion_matrices.png  
 
 Dataset
-PropertyValueSourceKaggle — UCI Phishing Website DatasetTotal websites11,054
+
+PropertyValueSourceKaggle — UCI Phishing Website 
+
+DatasetTotal websites 11,054
+
 Features 30 (encoded as -1, 0, or 1)
+
 Target column class (-1 = Phishing, 1 = Legitimate)
+
 Missing values None
+
 Class balance 55.7% Legitimate / 44.3% Phishing
 
 Machine Learning Models
