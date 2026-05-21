@@ -3,7 +3,7 @@
 A Machine Learning web application that detects whether a website is phishing or legitimate.
 The system automatically visits a website, extracts 30 security features, and classifies it using a trained Random Forest model.
 
-**What This Project Does?**
+• **What This Project Does?**
 
 Accepts any website URL as input
 
@@ -16,7 +16,7 @@ Shows a confidence score and risk level (Safe / Suspicious / Dangerous)
 Provides a 4-category security breakdown explaining what was checked
 
 
-**Project Structure**
+• **Project Structure**
 
 phishing-detection-system/
 │
@@ -33,7 +33,7 @@ phishing-detection-system/
     ├── model_comparison.png    
     └── confusion_matrices.png  
 
-**Dataset**
+• **Dataset**
 
   Kaggle — Phishing Website Dataset
 
@@ -47,7 +47,7 @@ phishing-detection-system/
 
   Class balance 55.7% Legitimate / 44.3% Phishing
 
-**Machine Learning Models**
+• **Machine Learning Models**
 
 Two models were trained and compared. The best one is selected automatically.
 Metric Logistic Regression and Random Forest 
@@ -64,7 +64,7 @@ Metric Logistic Regression and Random Forest
 
 **Random Forest** was selected as the final model based on highest ROC-AUC score.
 
-**Risk Level Classification**
+• **Risk Level Classification**
 
 Phishing Probability Risk Level  
 
@@ -147,7 +147,7 @@ backlinks,
 phishing databases
 
 
-**Setup Instructions**
+• **Setup Instructions**
 **Requirements**
 
 Python 3.9 or higher
@@ -177,7 +177,7 @@ Step 4 — Launch the web application
 streamlit run app.py
 Open your browser at: http://localhost:8501
 
-**How to Use**
+• **How to Use**
 
 Paste any website URL into the input box
 
@@ -188,7 +188,7 @@ Wait 5 to 15 seconds while the site is visited and analyzed
 View the results — verdict, confidence score, risk level, and security breakdown
 
 
-**Academic Info**
+• **Academic Info**
 
 **Topic:** Phishing Website Detection using Machine Learning
 
